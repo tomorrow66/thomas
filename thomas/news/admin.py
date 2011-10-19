@@ -1,4 +1,4 @@
-from hoopoid.news.models import News
+from thomas.news.models import News
 from django.contrib import admin
 
 class NewsAdmin(admin.ModelAdmin):

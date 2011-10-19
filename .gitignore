@@ -1,2 +1,11 @@
-*.*~
+# Emacs noise
+.#*
+\#*#
 *~
+
+# Python noise
+*.pyc
+*.egg-info
+
+# Virtualenv noise
+ve/
