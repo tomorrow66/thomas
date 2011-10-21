@@ -1,9 +1,58 @@
+body {
+    margin: 0px;
+}
 
 #main-wrap {
     width: 100%;
 }
 
+/* All header styles */
+
 #header {
+    background-color: #58595b;
     width: 100%;
+}
+
+#banner {
+    width: 500px;
+    margin-left: auto; margin-right: auto;
+}
+
+#banner h1 {
+    margin: 0px;
+}
+
+#nav {
+    width: 900px;
+    margin-left: auto; margin-right: auto;
     background-color: red;
+}
+
+#nav ul {
+    width: 400px;
+    margin-left: auto; margin-right: auto;
+}
+
+#nav li {
+    display: inline;
+}
+
+#slideshow {
+    width: 900px;
+    background-color: yellow;
+    margin-left: auto; margin-right: auto;
+}
+
+/* Content Styles */
+#content {
+    width: 900px;
+    background-color: orange;
+    margin-left: auto; margin-right: auto;
+}
+
+/* Footer Styles */
+#footer {
+    width: 900px;
+    background-color: purple;
+    margin-left: auto; margin-right: auto;
 }

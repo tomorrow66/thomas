@@ -1,7 +1,7 @@
-from django.conf.urls.defaults import patterns, include, url
 from django.conf import settings
+from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
-admin.autodiscover()
+from django.views.generic import TemplateView, DetailView, ListView
 
 urlpatterns = patterns('',
     # Examples:
