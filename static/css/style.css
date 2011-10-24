@@ -9,7 +9,7 @@ body {
 /* All header styles */
 
 #header {
-    background-color: #58595b;
+
     width: 100%;
 }
 
@@ -23,9 +23,8 @@ body {
 }
 
 #nav {
-    width: 900px;
-    margin-left: auto; margin-right: auto;
-    background-color: red;
+    background: url('../images/gradient1.png') repeat-x white;
+    height: 49px;
 }
 
 #nav ul {
@@ -38,16 +37,33 @@ body {
 }
 
 #slideshow {
-    width: 900px;
-    background-color: yellow;
+    height: 149px;
+    background: url('../images/gradient2.png') repeat-x bottom white;
     margin-left: auto; margin-right: auto;
 }
 
 /* Content Styles */
 #content {
     width: 900px;
-    background-color: orange;
     margin-left: auto; margin-right: auto;
+}
+
+#video ul {
+    list-style-type: none;
+    color: #58595B;
+}
+
+#video li:nth-child(odd) {
+    font-weight: bold;
+    font-family: helvetica;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#video li:nth-child(even) {
+    font-family: helvetica;
+    font-style: italic;
+    margin-bottom: 50px;
 }
 
 /* Footer Styles */
@@ -55,4 +71,49 @@ body {
     width: 900px;
     background-color: purple;
     margin-left: auto; margin-right: auto;
+}
+
+/* Accordion */
+#accordion p {
+    font-family: helvetica;
+    line-height: 25px;
+}
+
+#about-accordion {
+    position: relative;
+    float: left;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+#accordion h2, h3 {
+    font-size: 18px;
+    font-family: helvetica;
+    font-weight: lighter;
+}
+
+#accordion h2 {
+    margin-top: 0px;
+    padding-left: 50px;
+}
+
+#accordion a {
+    color: black;
+    text-decoration: none;
+}
+
+#accordion a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.ui-accordion-content {
+
+}
+
+#accordion p {
+    padding-left: 290px;
+    padding-right: 80px;
+    position: relative;
+    bottom: 62px;
 }

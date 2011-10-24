@@ -4,6 +4,13 @@
     {% block extra_css %}{% endblock %}
     <link rel="Stylesheet" type="text/css" href="static/css/style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/jqueryUI/js/jquery-ui-1.8.15.custom.min.js"></script>
+
+    <script>
+	$(function() {
+	    $( "#accordion" ).accordion();
+	});
+    </script>
 
     <title>{% block title %}Thomas Barnette{% endblock %}</title>
 
@@ -54,14 +61,33 @@
 	</div>
 
 	<div id="video">
-	  <h2>VIDEOS</h2>
-	  <p>Placeat ex before they sold out, wolf brunch consequat quinoa thundercats farm-to-table mollit put a bird on it quis dolor art party trust fund. Tattooed seitan sunt mustache. Messenger bag organic mollit portland aute culpa, sustainable before they sold out tempor enim 3 wolf moon. DIY jean shorts adipisicing, biodiesel vero organic gentrify photo booth you probably haven't heard of them. Leggings tofu wayfarers, farm-to-table artisan pitchfork single-origin coffee esse four loko. Sint cred pariatur iphone incididunt synth. Fap fugiat do DIY, mlkshk whatever leggings tumblr est consectetur.
+	  <h2>VIDEO</h2>
+	  <ul>
+	    <li>"LET ME BREATHE" LIVE AT THE ROXY, ATLANTA, GA</li>
+	    <li>APRIL 13, 2011</li>
+
+	    <li>"NATURE BOY" LIVE AT THE ROXY, ATLANTA, GA</li>
+	    <li>APRIL 13, 2011</li>
+
+	    <li>"REAL LOVE" LIVE AT THE ROXY, ATLANTA, GA</li>
+	    <li>APRIL 13, 2011</li>
+
 	  </p>
 	</div>
 
 	<div id="news">
 	  <h2>NEWS</h2>
-	  <p>Placeat ex before they sold out, wolf brunch consequat quinoa thundercats farm-to-table mollit put a bird on it quis dolor art party trust fund. Tattooed seitan sunt mustache. Messenger bag organic mollit portland aute culpa, sustainable before they sold out tempor enim 3 wolf moon. DIY jean shorts adipisicing, biodiesel vero organic gentrify photo booth you probably haven't heard of them. Leggings tofu wayfarers, farm-to-table artisan pitchfork single-origin coffee esse four loko. Sint cred pariatur iphone incididunt synth. Fap fugiat do DIY, mlkshk whatever leggings tumblr est consectetur.
+
+	  <div id="accordion">
+	    {% for post in latest_news_list %}
+	    <h3><a href="#">[+]&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;{{ post.title|upper  }}<h2>{{ post.pub_date }}</h2></a></h3>
+	    
+	    <div>
+	      <p>{{ post.article }}</p>
+	    </div>
+	    {% endfor %}
+	  </div>
+
 	  </p>
 	</div>
 
