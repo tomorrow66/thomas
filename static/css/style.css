@@ -48,6 +48,15 @@ body {
     margin-left: auto; margin-right: auto;
 }
 
+#music {
+    margin-bottom: 400px;
+}
+
+#music div {
+    position: relative;
+    float: left;
+}
+
 #video ul {
     list-style-type: none;
     color: #58595B;
