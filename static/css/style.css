@@ -2,6 +2,11 @@ body {
     margin: 0px;
 }
 
+@font-face {
+    font-family: walkway-bold;
+    src: url('../fonts/walkway-bold.ttf');
+}
+
 #main-wrap {
     width: 100%;
 }
@@ -42,7 +47,22 @@ body {
     margin-left: auto; margin-right: auto;
 }
 
+#slide-wrap {
+    margin-left: auto; margin-right: auto;
+    width: 900px;
+    position: relative;
+    top: 10px;
+}
+
 /* Content Styles */
+h2 {
+    font-family: walkway-bold;
+    font-size: 25pt;
+    letter-spacing: 6px;
+    color: #414042;
+    margin-bottom: 40px;
+}
+
 #content {
     width: 900px;
     margin-left: auto; margin-right: auto;
@@ -53,8 +73,21 @@ body {
 }
 
 #music div {
+    padding-left: 55px;
     position: relative;
     float: left;
+}
+
+#biography {
+}
+
+#biography p {
+    color: #58595b;
+    font-family: helvetica;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding-left: 55px;
 }
 
 #video ul {
@@ -77,8 +110,17 @@ body {
 
 /* Footer Styles */
 #footer {
+    width: 100%;
+    background-color: #e3e4e5;
+    margin-left: auto; margin-right: auto;
+}
+
+#footer-slides {
+    background-color: white;
+}
+
+#social-media {
     width: 900px;
-    background-color: purple;
     margin-left: auto; margin-right: auto;
 }
 
@@ -120,9 +162,4 @@ body {
 
 }
 
-#accordion p {
-    padding-left: 290px;
-    padding-right: 80px;
-    position: relative;
-    bottom: 62px;
 }
