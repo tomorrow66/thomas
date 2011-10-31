@@ -55,6 +55,7 @@ body {
 }
 
 /* Content Styles */
+
 h2 {
     font-family: walkway-bold;
     font-size: 25pt;
@@ -93,6 +94,8 @@ h2 {
 #video ul {
     list-style-type: none;
     color: #58595B;
+    position: relative;
+    left: 20px;
 }
 
 #video li:nth-child(odd) {
@@ -106,6 +109,9 @@ h2 {
     font-family: helvetica;
     font-style: italic;
     margin-bottom: 50px;
+}
+
+#news {
 }
 
 /* Footer Styles */
@@ -125,6 +131,11 @@ h2 {
 }
 
 /* Accordion */
+
+#accordion {
+    padding-left: 50px;
+}
+
 #accordion p {
     font-family: helvetica;
     line-height: 25px;
