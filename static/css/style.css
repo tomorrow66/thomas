@@ -204,19 +204,29 @@ h2 {
     margin-top: 60px;
 }
 
-#accordion h2, h3 {
+#accordion h2 {
+    letter-spacing: 1px;
+    font-family: helvetica;
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+#accordion h3 {
     font-size: 18px;
     font-family: helvetica;
     font-weight: lighter;
+    color: #58595b;
 }
 
 #accordion h2 {
-    margin-top: 0px;
     padding-left: 50px;
+
 }
 
 #accordion a {
-    color: black;
+    color: #58595b;
     text-decoration: none;
 }
 
