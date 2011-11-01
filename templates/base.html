@@ -19,6 +19,12 @@
       $("a[rel^='prettyPhoto']").prettyPhoto();
       });
     </script>
+    
+    <script>
+	$(function() {
+	    $( "#accordion" ).accordion();
+	});
+    </script>
 
     <title>{% block title %}Thomas Barnette{% endblock %}</title>
 
@@ -35,11 +41,11 @@
 	
 	<div id="nav">
 	  <ul>
-	    <li>Music</li>
-	    <li>Biography</li>
-	    <li>Video</li>
-	    <li>News</li>
-	    <li>Contact</li>
+	    <li><a href="#music" class="music">MUSIC</a></li>
+	    <li><a href="#biography" class="biography">BIOGRAPHY</a></li>
+	    <li><a href="#video" class="video">VIDEO</a></li>
+	    <li><a href="#news" class="news">NEWS</a></li>
+	    <li><a href="#contact" class="contact">CONTACT</a></li>
 	  </ul>
 	</div>
 	
@@ -93,14 +99,7 @@
       <div id="video">
 	<h2>VIDEO</h2>
 	<ul>
-	  <li>"LET ME BREATHE" LIVE AT THE ROXY, ATLANTA, GA</li>
-	  <li>APRIL 13, 2011</li>
-
-	  <li>"NATURE BOY" LIVE AT THE ROXY, ATLANTA, GA</li>
-	  <li>APRIL 13, 2011</li>
-
-	  <li>"REAL LOVE" LIVE AT THE ROXY, ATLANTA, GA</li>
-	  <li>APRIL 13, 2011</li>
+	  <li>Check back soon for videos</li>
 	</ul>
 
       </div>
@@ -147,8 +146,6 @@
       </div>
 
       <div id="social-media">
-	<a href="http://www.facebook.com/"><img src="static/images/myspace.jpg"></a>
-	<a href="http://www.facebook.com/"><img src="static/images/facebook.jpg"></a>
 	<a href="mailto:info@thomasbarnette.com" class="email">info@thomasbarnette.com</a>
       </div>
       

@@ -40,12 +40,23 @@ body {
 }
 
 #nav ul {
-    width: 400px;
+    width: 900px;
     margin-left: auto; margin-right: auto;
 }
 
 #nav li {
+    position: relative;
+    top: 15px;
+    height: 100px;
     display: inline;
+}
+
+#nav a {
+    font-family: walkway-bold;
+    color: #58595b;
+    text-decoration: none;
+    width: 500px;
+    background-image: url('../images/news-over.png');
 }
 
 #slideshow {
@@ -69,7 +80,6 @@ body {
 a.top {
     color: #58595b;
     margin: 50px;
-    
 }
 
 h2 {
@@ -105,6 +115,11 @@ h2 {
     letter-spacing: 1px;
     font-weight: lighter;
     padding-left: 55px;
+    margin-bottom: 80px;
+}
+
+#video {
+    margin-top: 120px;
 }
 
 #video ul {
@@ -127,7 +142,13 @@ h2 {
     margin-bottom: 50px;
 }
 
+#video ul {
+    margin-bottom: 80px;
+}
+
+
 #news {
+    margin-top: 120px;
 }
 
 /* Footer Styles */
@@ -135,7 +156,12 @@ h2 {
     width: 100%;
     border-top: 35px #E3E4E5 solid;
     margin-left: auto; margin-right: auto;
+    margin-top: 120px;
     background: url('../images/footer_back.png') repeat-x bottom white;
+}
+
+#footer_slideshow {
+    padding-top: 35px;
 }
 
 #footer-slides {
@@ -150,7 +176,7 @@ h2 {
 #social-media {
     width: 900px;
     margin-left: auto; margin-right: auto;
-    margin-top: 20px;
+    margin-top: 65px;
 }
 
 #social-media a {
@@ -163,6 +189,7 @@ h2 {
 
 #accordion {
     padding-left: 50px;
+    margin-bottom: 80px;
 }
 
 #accordion p {
