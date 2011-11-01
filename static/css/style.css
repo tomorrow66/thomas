@@ -14,13 +14,20 @@ body {
 /* All header styles */
 
 #header {
-
+    background-color: #58595b;
     width: 100%;
+    padding-top: 60px;
 }
 
 #banner {
-    width: 500px;
+    width: 900px;
     margin-left: auto; margin-right: auto;
+    height: 60px;
+}
+
+#banner img {
+    position: relative;
+    float: left;
 }
 
 #banner h1 {
@@ -55,6 +62,15 @@ body {
 }
 
 /* Content Styles */
+
+#content div {
+
+}
+a.top {
+    color: #58595b;
+    margin: 50px;
+    
+}
 
 h2 {
     font-family: walkway-bold;
@@ -117,17 +133,30 @@ h2 {
 /* Footer Styles */
 #footer {
     width: 100%;
-    background-color: #e3e4e5;
+    border-top: 35px #E3E4E5 solid;
     margin-left: auto; margin-right: auto;
+    background: url('../images/footer_back.png') repeat-x bottom white;
 }
 
 #footer-slides {
     background-color: white;
 }
 
+.email {
+    position: relative;
+    bottom: 7px;
+}
+
 #social-media {
     width: 900px;
     margin-left: auto; margin-right: auto;
+    margin-top: 20px;
+}
+
+#social-media a {
+    font-family: helvetica;
+    color: #58595B;
+    margin-right: 20px;
 }
 
 /* Accordion */
