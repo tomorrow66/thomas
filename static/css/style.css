@@ -209,10 +209,12 @@ h2 {
     margin-left: auto; margin-right: auto;
     margin-top: 120px;
     background: url('../images/footer_back.png') repeat-x bottom white;
+    border-bottom: 70px #d1d3d4 solid;
 }
 
 #footer_slideshow {
     padding-top: 20px;
+
 }
 
 #footer-slides {
@@ -228,6 +230,15 @@ h2 {
     width: 900px;
     margin-left: auto; margin-right: auto;
     margin-top: 55px;
+}
+
+#social-media p {
+    position: relative;
+    float: right;
+    bottom: 25px;
+    font-family: helvetica;
+    color: #58595b;
+    letter-spacing: 1.8px;
 }
 
 #social-media a {
