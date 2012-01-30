@@ -58,20 +58,19 @@
 
 		</div>
 
-		<div id="biography">
+		<div id="biography">		  
 		 <%= biography(@bio.title, @bio.article) %>	
-			<h2>BIOGRAPHY</h2>
-			<p>
-			  Thomas began singing when he was 4 years old. The first song that came out of his mouth was “God Gave Me A Song”. Ever since that time, singing, music, and performing has been Thomas’ strongest passion in life. After graduating with a degree in Industrial Engineering from Georgia Tech, Thomas worked in the corporate world for a while. Eventually, he had to live his passion for music. He worked with the Olympic Opening Ceremonies in 1996 as a choreographer, singer and dancer for the Opening Ceremonies and Coca Cola Olympic City. Thomas has also worked with shows like the Super Bowl Halftime Show, Fox Theater Anniversary Show, and has written jingles and been in commercials for many different companies in the Atlanta area. Now, Thomas’ goal is to share his music with the world. His CD entitled “Thomas Barnette” will be released this summer on his own label TNB Music.
-			</p>
-
-			<a href="#top" class="top">Back To Top</a>
+		 <a href="#top" class="top">Back To Top</a>
 		</div>
 
 		<div id="video" name="video">
 			<h2>VIDEO</h2>
 			<ul>
+			<% if @videos == nil then %>
 			  <li>Check back soon for videos</li>
+			<% else %>
+			  <li> </li>
+			<% end %>
 			</ul>
 
 		</div>

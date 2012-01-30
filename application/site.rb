@@ -1,5 +1,6 @@
 get '/?' do
+  @videos = Video.all
   @posts = Post.all
-  @bio = Bio.first(:title => 'Biography')
+  @bio = Bio.get(1)
   erb :index
 end
