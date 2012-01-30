@@ -1,0 +1,211 @@
+body {
+	font-size: 14px;
+	line-height: 1.5em;
+	font-family: serif;
+	color: #333;
+	-webkit-text-size-adjust:none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+	
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+.inline {
+	display: inline;
+}
+
+.hide {
+	display; none;
+}
+
+.text-center {
+	text-align: center;
+}
+		
+a img { border: none; }
+		
+a { color: rgb(39, 177, 245); }
+		
+a:hover { text-decoration: none; }
+		
+h1, h2, h3, h4, h5, h6 {
+	font-family: sans-serif;
+	color: black;
+}
+		
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
+h4 { font-size: 21px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+		
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+	color: silver;
+	font-weight: normal;
+	font-size: 67%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Cabin+Condensed:400);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,700);
+
+	html {
+		background-attachment: fixed;
+		background-color: #f3f3f3;
+		background-image: url(http://vesperapps.com/img/stone.png);
+		border-top: 3px solid #121212;
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		color: #121212;
+		font-family: 'Lato', sans-serif;
+		line-height: 1.5em;
+		margin: auto;
+		padding: 33px 0 0 0;
+		width: 616px;
+		-webkit-text-size-adjust: none;
+	}
+
+	a, a:visited {
+		color: #27b1f5;
+		display: inline-block;
+		margin: 0 -3px;
+		padding: 0 3px;
+		text-decoration: underline;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	a img {
+		border: none;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Cabin Condensed', sans-serif;
+		font-weight: normal;
+	}
+
+	h2.meta {
+		color: silver;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	h2#version {
+		float: right;
+	}
+
+	div#logo {
+		display: block;
+		margin: auto;
+		position: relative;
+		width: 309px;
+	}
+
+	div#logo code {
+		left: 86px;
+		position: absolute;
+		text-shadow: 0 1px 0 silver;
+		top: 140px;
+	}
+
+	div#menu {
+		margin: 33px auto 0 auto;
+		text-align: center;
+		overflow: auto;
+	}
+
+ a.main, input.button  {
+		background-color: #121212;
+		box-shadow: 0 0 3px #777;
+		color: white;
+		font-family: 'Cabin Condensed', sans-serif;
+		margin: 11px 11px 0 11px;
+		padding: 7px 11px;
+		text-decoration: none;
+		display: inline;
+		width: 148px;
+	}
+	
+input.button {
+		margin: 0;
+		width: 130px;
+	}
+
+ a.main:hover, input.button:hover {
+		box-shadow: 0 0 7px #27B1F5;
+		color: #27B1F5\9; /* IE hack */
+		text-shadow: 0 0 7px #27B1F5;
+	}
+	
+	#new-page-form {
+		display: none;
+		margin-left: 160px;
+	}
+	
+	#new-page-form input.textfield{
+		width: 106px;
+	}
+	
+	#confirm {
+		display: none;
+		margin-left: 90px;
+	}
+	
+	.danger {
+		color: #FF0000;
+	}
+	
+	#confirm a:last-child{
+		margin-left: 40px;
+	}
+	
+	#utilities {
+		margin-top: 22px;
+	}
+	
+	a.touch {
+		display: block;
+	}
+
+	#content-container {
+		margin-top: 22px;
+		width: 86%;
+		background-color: #fff;
+		padding: 0 22px 22px 22px;
+		border: 1px solid #bcbcbc;
+	}
+	
+	ul {
+		list-style-type: none;
+		padding: ;
+	}
+	
+#sign-in {
+	margin-top: 50px;
+	margin-left: 100px;
+}
+	
+	
+	

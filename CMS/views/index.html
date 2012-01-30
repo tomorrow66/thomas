@@ -1,0 +1,129 @@
+<div id="main-wrap">
+
+	<div id="header">
+
+		<div id="banner">
+		  <a href="#top"><img src="/img/thomasbarnett_logo.png"></a>
+		</div>
+
+		<div id="nav">
+		  <ul>
+		    <li><a href="#music" id="musiclink">MUSIC</a></li>
+		    <li><a href="#biography" id="biographylink">BIOGRAPHY</a></li>
+		    <li><a href="#video" id="videolink">VIDEO</a></li>
+		    <li><a href="#news" id="newslink">NEWS</a></li>
+		    <li><a href="#contact" id="contactlink">CONTACT</a></li>
+		  </ul>
+		</div>
+	</div>
+</div>
+		<div id="slideshow">
+			<div id="carousel-wrap">
+				<div class="jMyCarousel">
+				    <ul id="">
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer1.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_01.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer2.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_02.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer3.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_03.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer4.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_04.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer5.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_05.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer6.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_06.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer7.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_07.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer8.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_08.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer9.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_09.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer10.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_10.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer12.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_11.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer13.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_12.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer13.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_13.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer14.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_14.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer15.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_15.jpg"></a></li>
+				      <li style="width:80px; height:80px;"><a href="/img/slides/Layer16.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_16.jpg"></a></li>
+				    </ul>
+				  </div>
+				</div>
+			</div>
+	
+
+	<div id="content">
+     
+		<div id="music">
+			<h2>MUSIC</h2>
+			<div id="music-album">
+			  <img src="/img/CD.jpeg">
+			</div>
+
+			<div id="music-list">
+			  <p>music here</p>
+			</div>
+
+
+		</div>
+
+		<div id="biography">
+		 <%= biography(@bio.title, @bio.article) %>	
+			<h2>BIOGRAPHY</h2>
+			<p>
+			  Thomas began singing when he was 4 years old. The first song that came out of his mouth was “God Gave Me A Song”. Ever since that time, singing, music, and performing has been Thomas’ strongest passion in life. After graduating with a degree in Industrial Engineering from Georgia Tech, Thomas worked in the corporate world for a while. Eventually, he had to live his passion for music. He worked with the Olympic Opening Ceremonies in 1996 as a choreographer, singer and dancer for the Opening Ceremonies and Coca Cola Olympic City. Thomas has also worked with shows like the Super Bowl Halftime Show, Fox Theater Anniversary Show, and has written jingles and been in commercials for many different companies in the Atlanta area. Now, Thomas’ goal is to share his music with the world. His CD entitled “Thomas Barnette” will be released this summer on his own label TNB Music.
+			</p>
+
+			<a href="#top" class="top">Back To Top</a>
+		</div>
+
+		<div id="video" name="video">
+			<h2>VIDEO</h2>
+			<ul>
+			  <li>Check back soon for videos</li>
+			</ul>
+
+		</div>
+
+		<a href="#top" class="top">Back To Top</a>
+
+		<div id="news" name="news">
+			<h2>NEWS</h2>
+			
+			<div id="accordion">
+			  <% @posts.each do |post| %>
+			  <%= entry(post.title, post.created_at.display, post.article) %>
+			  <% end %>
+			</div>
+
+
+		</div>
+		<a href="#top" class="top">Back To Top</a>
+	</div>
+
+   <div id="footer">
+     
+     <div id="footer_slideshow">
+	  <div class="jMyCarousel" >
+		    <ul id="">
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer1.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_01.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer2.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_02.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer3.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_03.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer4.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_04.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer5.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_05.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer6.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_06.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer7.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_07.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer8.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_08.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer9.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_09.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer10.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_10.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer12.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_11.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer13.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_12.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer13.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_13.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer14.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_14.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer15.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_15.jpg"></a></li>
+		      <li style="width:80px; height:80px;"><a href="/img/slides/Layer16.jpg" rel="prettyPhoto[slide]"><img src="/img/thumbs/ThomasMontage_16.jpg"></a></li>
+		    </ul>
+		  </div>     </div>
+
+     <div id="social-media">
+		<a href="" id="myspace" class="social" ><img src="/img/myspace.png" id="myspace" alt="myspace"  /></a>
+		<a href="http://www.facebook.com/pages/Thomas-Barnette/178867345512538" id="facebook" class="social" ><img src="/img/facebook.png" id="facebook" alt="facebook" /></a>
+		<a href="mailto:info@thomasbarnette.com" id="email" class="social">info@thomasbarnette.com</a> 
+		<p>© 2011 ThomasBarnette.com</p>
+     </div>
+     
+   </div>
+
+
+

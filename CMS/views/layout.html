@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/css/site/style.css">
+    <link rel="Stylesheet" type="text/css" href="/js/site/hover/jquery.hoverscroll.css">
+    <link rel="Stylesheet" type="text/css" href="/js/site/prettyPhoto/css/prettyPhoto.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/site/jqueryUI/js/jquery-ui-1.8.15.custom.min.js"></script>
+    <script type="text/javascript" src="/js/site/hover/jquery.hoverscroll.js"></script>
+    <script type="text/javascript" src="/js/site/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="/js/site/site.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="/css/site/jMyCarousel.css" />  
+	<script type="text/javascript" src="/js/site/jMyCarousel.js"></script>  
+
+    <script type="text/javascript">
+    
+	  	$(function() {
+		    $(".jMyCarousel").jMyCarousel({
+		        visible: '100%'
+		    });
+		});
+    </script>
+    
+    <script type="text/javascript">
+
+      $(document).ready(function() {
+	      $("a[rel^='prettyPhoto']").prettyPhoto();
+      });
+    
+    </script>
+    
+    <title>Thomas Barnette</title>
+</head>
+
+<body>
+	
+	<!-- Show alert messages -->
+	<%= alert %>
+	
+	<!-- Show content -->
+	<%= yield %>
+	
+</body>
+
+</html>

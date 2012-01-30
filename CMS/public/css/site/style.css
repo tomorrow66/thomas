@@ -1,0 +1,386 @@
+@font-face {
+  	font-family: 'walkway';
+    src: url('walkway-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    font-size: 15px;
+}
+
+.hide {
+	display: none;
+}
+
+#main-wrap {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* All header styles */
+
+#header {
+    background-color: #58595b;
+    width: 100%;
+    padding-top: 60px;
+}
+
+#banner {
+    width: 900px;
+    margin-left: auto; margin-right: auto;
+    height: 60px;
+}
+
+#banner img {
+    position: relative;
+    float: left;
+}
+
+#banner h1 {
+    margin: 0px;
+}
+
+#nav {
+    background: url('../img/gradient1.png') repeat-x white;
+    height: 49px;
+}
+
+#nav ul {
+    width: 1000px;
+    margin-left: auto; margin-right: auto;
+    position: relative;
+    left: 65px;
+}
+
+#nav li {
+    position: relative;
+    top: 15px;
+    height: 100px;
+    display: inline;
+    margin-right: 90px;
+}
+
+#nav a {
+    font-family: helvetica;
+	font-weight: 100;
+	letter-spacing: -.09em;
+    color: #58595b;
+    text-decoration: none;
+
+}
+
+/* Nav Backgrounds */
+
+ul{
+	list-style-type: none;
+}
+
+div#nav ul li a {
+    padding: 10px 20px;
+}
+
+a#musiclink  {
+    background: url('../img/Music-over.png') no-repeat;
+}
+
+a#biographylink  {
+    background: url('../img/contact-over.png') no-repeat;
+}
+
+a#videolink {
+    background: url('../img/video-over.png') no-repeat;
+}
+
+a#newslink  {
+    background: url('../img/news-over.png') no-repeat;
+}
+
+a#contactlink  {
+    background: url('../img/contact-over.png') no-repeat;
+}
+
+
+a:link#musiclink  {
+    background: none;
+}
+
+a:link#biographylink  {
+    background: none;
+}
+
+a:link#videolink {
+    background: none;
+}
+
+a:link#newslink  {
+    background: none;
+}
+
+a:link#contactlink  {
+    background: none;
+}
+
+
+a:hover#musiclink, a:focus#musiclink  {
+    background: url('../img/Music-over.png') no-repeat;
+    background-position-x: 9px;
+
+}
+
+a:hover#biographylink, a:focus#biographylink  {
+    background: url('../img/contact-over.png') no-repeat;
+    background-position-x: 9px;
+}
+
+a:hover#videolink, a:focus#videolink {
+    background: url('../img/video-over.png') no-repeat;
+    background-position-x: 9px;
+}
+
+a:hover#newslink, a:focus#newslink   {
+    background: url('../img/news-over.png') no-repeat;
+    background-position-x: 9px;
+}
+
+a:hover#contactlink, a:focus#contactlink   {
+    background: url('../img/contact-over.png') no-repeat;
+}
+
+
+#slideshow {
+    height: 145px;
+    background: url('../img/gradient2.png') repeat-x bottom white;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#slide-wrap {
+    margin-left: auto; 
+    margin-right: auto;
+    width: 800px;
+    position: relative;
+    top: 10px;
+}
+
+div#carousel-wrap, #footer_slideshow {
+	position: relative;
+	width: 800px;
+	overflow: hidden;
+	margin-left: 50%;
+	left: -400px;
+	border:2px solid #dedede;
+	border-bottom: none;
+	border-top: none;	
+}
+
+div#carousel-wrap {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.jMyCarousel ul {margin: 0; padding: 0; }
+
+div.jMyCarousel li {width: 80px; height: 80px; overflow-x: hidden; overflow-y: hidden; float: left; display: inline; }
+
+/* Content Styles */
+
+#content {
+}
+
+
+a.top {
+    color: #58595b;
+    margin: 50px;
+}
+
+h2 {
+    font-family: 'walkway';
+		font-weight: 100;
+    font-size: 25pt;
+    letter-spacing: 6px;
+    color: #414042;
+    margin-bottom: 40px;
+}
+
+#content {
+    width: 900px;
+    margin-left: auto; margin-right: auto;
+}
+
+#music {
+    margin-bottom: 400px;
+}
+
+#music div {
+    padding-left: 55px;
+    position: relative;
+    float: left;
+}
+
+#biography {
+}
+
+#biography p {
+    color: #58595b;
+    font-family: helvetica;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding-left: 55px;
+    margin-bottom: 80px;
+}
+
+#video {
+    margin-top: 120px;
+}
+
+#video ul {
+    list-style-type: none;
+    color: #58595B;
+    position: relative;
+    left: 20px;
+}
+
+#video li:nth-child(odd) {
+    font-weight: bold;
+    font-family: helvetica;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#video li:nth-child(even) {
+    font-family: helvetica;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+#video ul {
+    margin-bottom: 80px;
+}
+
+
+#news {
+    margin-top: 120px;
+}
+
+
+
+/* Footer Styles */
+#footer {
+    width: 100%;
+    border-top: 35px #E3E4E5 solid;
+    margin-left: auto; margin-right: auto;
+    margin-top: 120px;
+    background: url('../img/footer_back.png') repeat-x bottom white;
+    border-bottom: 70px #d1d3d4 solid;
+}
+
+#footer_slideshow {
+    margin-top: 20px;
+}
+
+#footer-slides {
+    background-color: white;
+}
+
+.email {
+    position: relative;
+    bottom: 7px;
+}
+
+#social-media {
+    width: 900px;
+    height:36px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 20px;
+}
+
+#social-media p {
+    position: relative;
+    float: right;
+    bottom: 5px;
+    font-family: helvetica;
+    color: #58595b;
+    letter-spacing: 1.8px;
+}
+
+#social-media a {
+    font-family: helvetica;
+    color: #58595B;
+    margin-right: 20px;
+}
+
+a#email {
+	position: relative;
+    bottom: 2px;
+
+}
+
+a.social img {
+	padding-top: 9px;
+}
+
+
+/* Accordion */
+
+#accordion {
+    margin-bottom: 80px;
+}
+
+#accordion p {
+    font-family: helvetica;
+    line-height: 40px;
+    margin-left: 50px;
+    font-weight: lighter;
+    color: #58595b;
+    margin-top: 50px;
+}
+
+#about-accordion {
+    position: relative;
+    float: left;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+#accordion h2 {
+    letter-spacing: 1px;
+    font-family: helvetica;
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: lighter;
+    padding-top: 10px;
+    color: #58595b;
+
+}
+
+#accordion h3 {
+    font-size: 18px;
+    font-family: helvetica;
+    font-weight: bold;
+    color: #58595b;
+    margin-top: 60px;
+}
+
+#accordion h2 {
+    padding-left: 50px;
+    margin: 0px;
+}
+
+#accordion a {
+    color: #58595b;
+    text-decoration: none;
+    font-family: helvetica;
+    letter-spacing: 1px;
+    font-size: 12pt;
+}
+
+.ui-accordion-content {
+
+}
+
+.ui-state-focus { outline: none; }
+
+}

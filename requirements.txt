@@ -1,4 +1,0 @@
-django
-pysqlite
-python-dateutil <2.0
-PIL

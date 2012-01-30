@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>CMS</title>	
+	<link rel="stylesheet" type="text/css" href="/css/design.css">	
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+	
+	<script src="/js/site.js" type="text/javascript" ></script>
+	
+	
+</head>
+
+<body>
+		<div id="menu">
+			<%= alert %>
+		</div>
+
+	<div id="content-container">
+		<div id="sign-in"  class="center">
+
+			<form action="/sign-in" id="sign-in" method="post">
+				<p>
+					<input type="text" name="email" id="email" class="textfield" placeholder="Email" value="<%= params[:email] %>" />
+				</p>
+				<p>
+					<input type="password" name="password" id="password" class="textfield" placeholder="Password" value="<%= params[:password] %>" />
+				</p>
+				<p>
+					<input type="submit" name="commit" class="button" value="Sign in" />
+				</p>
+			</form>
+		</div>	
+	</div>
+</body>
+
+</html>
+
+</body>
