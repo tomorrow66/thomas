@@ -1,5 +1,5 @@
 <h2>Video</h2>
-
+<%= alert %>
 <a href="#" class="add-element">New Video</a>
 
 <form action="/admin/new/video/"  method="post" class="new-element-form" style="display:none;">
@@ -10,10 +10,12 @@
 		<input type="text" name="link" class="textfield" placeholder="Link"/>
 	</p>
 	<p>
-		<input type="submit" value="Add Video" class="btn">
+		<input type="submit" value="Add Video" class="btn">&nbsp; <a href="#" class="cancel danger">Cancel</a>
+		
 	</p>
 	
 </form>
+<% @videos = @videos.reverse %>
 
 <% @videos.each do |v| %>
 <ul>

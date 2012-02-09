@@ -17,14 +17,5 @@ helpers do
  			<a href='#top' class='top'>Back To Top</a>
  		</div>"
    end
- 
-   def video(vid_num)
-     "<iframe src='http://player.vimeo.com/video/#{vid_num}?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0' width='297' height='168 frameborder='0' webkitAllowFullScreen allowFullScreen></iframe>"
-   end
-   
-   def image(filename, cls)
-     "<img src='img/#{filename}' class='#{cls}' />"
-   end
-   
    
 end

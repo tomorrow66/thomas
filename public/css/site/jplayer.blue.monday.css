@@ -16,6 +16,7 @@
 
 div.jp-single-player,
 div.jp-playlist-player {
+	width: 450px;
 
 	/* Edit the font-size to counteract inherited font sizing.
 	 * Eg. 1.25em = 1 / 0.8em
@@ -29,7 +30,7 @@ div.jp-playlist-player {
 }
 div.jp-interface {
 	position: relative;
-	width:418px;
+	width:450px;
 	height:80px;
 }
 div.jp-single-player div.jp-interface {
@@ -53,9 +54,9 @@ div.jp-interface ul.jp-controls a {
 }
 a.jp-play,
 a.jp-pause {
-	top:20px;
-	width:40px;
-	height:40px;
+	top:43px;
+	width:30px;
+	height:30px;
 }
 div.jp-single-player a.jp-play,
 div.jp-single-player a.jp-pause {
@@ -118,11 +119,11 @@ div.jp-progress {
 	overflow:hidden;
 	top:32px;
 	border: 2px solid #ccc;
-	width:122px;
+	width:330px;
 	height:5px;
 }
 div.jp-single-player div.jp-progress {
-	left:130px;
+	left:80px;
 }
 div.jp-playlist-player div.jp-progress {
 	left:164px;
@@ -193,7 +194,7 @@ div.jp-play-time,
 div.jp-total-time {
 	position: absolute;
 	top:49px;
-	width:122px;
+	width:164px;
 	font-size:.64em;
 	font-style:oblique;
 }
@@ -202,7 +203,7 @@ div.jp-total-time {
 }
 div.jp-single-player div.jp-play-time,
 div.jp-single-player div.jp-total-time {
-	left:130px;
+	left:83px;
 }
 div.jp-playlist-player div.jp-play-time,
 div.jp-playlist-player div.jp-total-time {

@@ -1,6 +1,5 @@
 <h2>Bio</h2>
 <h3>Editing</h3>
-<a href="/admin/">Back</a>
 <form action="/admin/update/bio/<%= @bio.id %>"  method="post" class="new-element-form" >
 	<p class="new-element-form" id="text" >
 		<input type="text" name="title" class="textfield" style="width: 520px;" value="<%= @bio.title %>" />
@@ -10,7 +9,8 @@
 	</p>
 
 	<p>
-		<input type="submit" value="Update Post" class="btn">
+		<input type="submit" value="Update Post" class="btn">&nbsp; <a href="/admin/" class="danger" >Cancel</a>
+		
 	</p>
 	
 </form>

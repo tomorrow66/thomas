@@ -18,10 +18,21 @@ jQuery(function()
 					return false;
 				});
 				
+				$('a.cancel').live('click', function()
+				{
+					$(this).parent().parent().slideToggle(900);		
+					return false;
+				});
+				
 				$('a#delete-page-link').live('click', function()
 				{
 					$('#confirm').slideToggle(900);		
 					return false;
 				});
+				
+				
+
+				
+				
 				 	
 });

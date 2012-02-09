@@ -122,7 +122,7 @@ h6 small {
 		padding: 7px 11px;
 		text-decoration: none;
 		display: inline;
-		width: 148px;
+		width: 70px;
 	}
 	
 input.button {
@@ -130,7 +130,7 @@ input.button {
 		width: 130px;
 	}
 
- a.main:hover, input.button:hover {
+ a.main:hover, input.button:hover, a.active {
 		box-shadow: 0 0 7px #27B1F5;
 		color: #27B1F5\9; /* IE hack */
 		text-shadow: 0 0 7px #27B1F5;
@@ -150,7 +150,7 @@ input.button {
 		margin-left: 90px;
 	}
 	
-	.danger {
+	a.danger {
 		color: #FF0000;
 	}
 	
@@ -211,6 +211,13 @@ input.button {
 
 #admin-logo {
 	margin-left: -40px;
+}
+
+div#alert {
+	width: 100%;
+	background-color: #ffff66;
+	padding-top: 11px;
+	padding-bottom: 11px;
 }
 
 	

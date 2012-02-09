@@ -219,6 +219,10 @@ h2 {
     float: left;
 }
 
+#music div#audio div {
+	padding: 0;
+}
+
 #biography {
 }
 

@@ -11,7 +11,8 @@
     <script type="text/javascript" src="/js/site/prettyPhoto/js/jquery.prettyPhoto.js"></script>
 	<script type="text/javascript" src="/js/site/site.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="/css/site/jMyCarousel.css" />  
+	<link rel="stylesheet" type="text/css" href="/css/site/jMyCarousel.css" /> 
+	 
 	<script type="text/javascript" src="/js/site/jMyCarousel.js"></script>  
 
     <script type="text/javascript">
@@ -30,7 +31,45 @@
       });
     
     </script>
-    
+
+	<link href="css/site/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/site/jquery.jplayer.min.js"></script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+
+		// Local copy of jQuery selectors, for performance.
+		var jpPlayTime = $("#jplayer_play_time");
+		var jpTotalTime = $("#jplayer_total_time");
+
+		$("#jquery_jplayer").jPlayer({
+			ready: function () {
+				this.element.jPlayer("setFile", "http://www.miaowmusic.com/audio/mp3/Miaow-07-Bubble.mp3", "http://www.miaowmusic.com/audio/ogg/Miaow-07-Bubble.ogg").jPlayer("");
+			},
+			volume: 50,
+			oggSupport: true,
+			customCssIds: true
+		})
+		.jPlayer("cssId", "play", "custom_jplayer_play")
+		.jPlayer("cssId", "pause", "custom_jplayer_pause")
+		.jPlayer("cssId", "stop", "custom_jplayer_stop")
+		.jPlayer("cssId", "loadBar", "custom_jplayer_load_bar")
+		.jPlayer("cssId", "playBar", "custom_jplayer_play_bar")
+		.jPlayer("cssId", "volumeMin", "custom_jplayer_volume_min")
+		.jPlayer("cssId", "volumeMax", "custom_jplayer_volume_max")
+		.jPlayer("cssId", "volumeBar", "custom_jplayer_volume_bar")
+		.jPlayer("cssId", "volumeBarValue", "custom_jplayer_volume_bar_value")
+		.jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
+			jpPlayTime.text($.jPlayer.convertTime(playedTime));
+			jpTotalTime.text($.jPlayer.convertTime(totalTime));
+		})
+		.jPlayer("onSoundComplete", function() {
+			this.element.jPlayer("play");
+		});
+	});
+	-->
+	</script>
     <title>Thomas Barnette</title>
 </head>
 

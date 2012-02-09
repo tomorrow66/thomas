@@ -23,15 +23,15 @@
 		<center><img src="/img/thomasbarnett_logo.png" id="admin-logo" width="470" height="27" alt="Thomasbarnett Logo"></center>
 		<div id="menu">
 			<p>
-				<a href="/admin" class="main left" >CMS</a>
-				<a href="/admin/readme" class="main left" >READ ME</a>
+				<a href="/bio/edit/" id="bio" class="main left">BIO</a>
+				<a href="/video/edit/" id="video" class="main left">VIDEO</a>
+				<a href="/news/edit/" id="news" class="main left">NEWS</a>
+				<a href="/admin/readme" id="readme" class="main left" >READ ME</a>
 				<a href="/sign-out" class="main left" >SIGN OUT</a>
 			</p>
 		</div>
 	<% end %>
-	<div id="content-container">
-	<%= alert %>
-	
+	<div id="content-container">	
 	<%= yield %>
 	</div>
 </body>

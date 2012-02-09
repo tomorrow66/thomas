@@ -35,6 +35,7 @@ post '/sign-in/?' do
   if errors > 0
     redirect '/sign-in'
   else
+    session[:alert] = "Welcome"
     user = User.first(:email => params[:email])
     session[:user] = user.id
     redirect '/admin'

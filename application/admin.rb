@@ -1,6 +1,6 @@
 get '/admin/?' do
   auth_user
-  erb :dashboard, :layout => :admin
+  erb :readme, :layout => :admin
 end
 
 get '/video/edit/?' do
@@ -23,13 +23,17 @@ end
 
 post '/admin/new/news/?' do
   auth_user
+  session[:alert] = ''
   Post.create(:title => params[:title], :article => params[:article])
+  session[:alert] = 'Post has been added.'
   redirect 'news/edit/'
 end
 
 post '/admin/new/video/?' do
   auth_user
+  session[:alert] = ''
   Video.create(:title => params[:title], :link => params[:link])
+  session[:alert] = 'Video has been added.'
   redirect 'video/edit/'
 end
 
@@ -80,6 +84,15 @@ post '/admin/update/bio/:id/?' do
   bio.update(:title => params[:title], :article => params[:article])
   session[:alert] = 'Bio has been updated.'
   redirect '/bio/edit/'
+end
+
+post '/admin/update/video/:id/?' do
+  auth_user
+  session[:alert] = ''
+  video = Video.get(params[:id])
+  video.update(:title => params[:title], :link => params[:link])
+  session[:alert] = 'Video has been updated.'
+  redirect '/video/edit/'
 end
 
 class Post

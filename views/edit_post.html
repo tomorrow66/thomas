@@ -1,5 +1,5 @@
 <h2>News</h2>
-
+<%= alert %>
 <a href="#" class="add-element">New Post</a>
 
 <form action="/admin/new/news/"  method="post" class="new-element-form" style="display:none;" >
@@ -10,11 +10,11 @@
 		<textarea type="text" name="article" class="textfield" placeholder="Article" cols="72" rows="10"></textarea>
 	</p>
 	<p>
-		<input type="submit" value="Add Post" class="btn">
+		<input type="submit" value="Add Post" class="btn">&nbsp; <a href="#" class="cancel danger">Cancel</a>
 	</p>
 	
 </form>
-
+<% @posts = @posts.reverse %>
 <% @posts.each do |p| %>
 	<ul>
 		<li><strong><%= p.title %></strong></li>

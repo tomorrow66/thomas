@@ -8,7 +8,7 @@ helpers do
     unless session[:alert].nil?
       msg = session[:alert]
       session[:alert] = nil
-      "<div id='alert'>#{msg}</div>"
+      "<div id='alert' class='text-center'>#{msg}</div>"
     end
   end
 
