@@ -1,0 +1,15 @@
+<h2>News</h2>
+<h3>Editing</h3>
+<a href="/news/edit/">Back</a>
+<form action="/admin/update/news/<%= @post.id %>"  method="post" class="new-element-form" >
+	<p class="new-element-form" id="text" >
+		<input type="text" name="title" class="textfield" value="<%= @post.title %>" />
+	</p>
+	<p class="new-element-form" id="text" >
+		<textarea type="text" name="article" class="textfield" value="<%= @post.article %>" cols="72" rows="10"><%= @post.article %></textarea>
+	</p>
+	<p>
+		<input type="submit" value="Update Post" class="btn">
+	</p>
+	
+</form>

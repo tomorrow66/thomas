@@ -51,8 +51,19 @@
 			  <img src="/img/CD.jpeg">
 			</div>
 
-			<div id="music-list">
-			  <p>music here</p>
+			<div id="music-list" class="right">
+   			  <audio>
+				<source src="http://k003.kiwi6.com/hotlink/2vnj4ex0g9/victim_master.wav"></source>
+			  </audio>
+			<div class="audio-controls">
+				<a class="audio-play" title="Play/Pause"></a>
+				<div class="audio-seek"></div>
+				<div class="audio-timer">00:00</div>
+				<div class="volume-box">
+					<div class="volume-slider"></div>
+					<a class="volume-button" title="Mute/Unmute"></a>
+				</div>
+			</div>
 			</div>
 
 
@@ -60,19 +71,24 @@
 
 		<div id="biography">		  
 		 <%= biography(@bio.title, @bio.article) %>	
-		 <a href="#top" class="top">Back To Top</a>
 		</div>
+		
 
 		<div id="video" name="video">
 			<h2>VIDEO</h2>
-			<ul>
-			<% if @videos == nil then %>
-			  <li>Check back soon for videos</li>
-			<% else %>
-			  <li> </li>
-			<% end %>
-			</ul>
-
+			<div id="accordion">
+				<% if @videos == nil then %>
+				  <p>Check back soon for videos</p>
+				<% else %>
+					<% @videos.each do |v| %>
+						<h3>
+							<a href="<%= v.link %>" rel="prettyPhoto[slide]">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <%= v.title %>
+								<h2><%= v.created_at.display %></h2>
+							</a>
+						</h3>
+					<% end %>
+				<% end %>
+			</div>
 		</div>
 
 		<a href="#top" class="top">Back To Top</a>
@@ -85,8 +101,6 @@
 			  <%= entry(post.title, post.created_at.display, post.article) %>
 			  <% end %>
 			</div>
-
-
 		</div>
 		<a href="#top" class="top">Back To Top</a>
 	</div>

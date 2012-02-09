@@ -1,8 +1,20 @@
 jQuery(function()
 {
-				$('a#new-page-link').live('click', function()
+				$('a.add-element').live('click', function()
 				{
-					$('#new-page-form').slideToggle(900);		
+					$(this).next().slideToggle(900);		
+					return false;
+				});
+				
+				$('a.slide').live('click', function()
+				{
+					$(this).parent().next().slideToggle(900);		
+					return false;
+				});
+			
+				$('a.slideup').live('click', function()
+				{
+					$(this).parent().slideToggle(900);		
 					return false;
 				});
 				
@@ -11,7 +23,5 @@ jQuery(function()
 					$('#confirm').slideToggle(900);		
 					return false;
 				});
-				
-
-				
+				 	
 });
