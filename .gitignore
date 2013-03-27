@@ -1,11 +1,6 @@
-# Emacs noise
-.#*
-\#*#
-*~
-
-# Python noise
-*.pyc
-*.egg-info
-
-# Virtualenv noise
-ve/
+.DS_Store
+/.bundle
+/data/*.sqlite3
+/log/*
+!/log/messages.log
+.sass-cache

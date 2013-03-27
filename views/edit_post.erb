@@ -1,0 +1,25 @@
+<h2>News</h2>
+<%= alert %>
+<a href="#" class="add-element">New Post</a>
+
+<form action="/admin/new/news/"  method="post" class="new-element-form" style="display:none;" >
+	<p class="new-element-form" id="text" >
+		<input type="text" name="title" class="textfield" placeholder="Title"/>
+	</p>
+	<p class="new-element-form" id="text" >
+		<textarea type="text" name="article" class="textfield" placeholder="Article" cols="72" rows="10"></textarea>
+	</p>
+	<p>
+		<input type="submit" value="Add Post" class="btn">&nbsp; <a href="#" class="cancel danger">Cancel</a>
+	</p>
+	
+</form>
+<% @posts = @posts.reverse %>
+<% @posts.each do |p| %>
+	<ul>
+		<li><strong><%= p.title %></strong></li>
+		<li><%= p.article %></li>
+		<li><a href="/modify/post/<%= p.id %>/" class="">Edit</a>&nbsp; <a href="#" class="danger slide">Delete</a></li>
+		<li style="display: none;"><a href="" class="slideup">No</a>&nbsp; <a href="/news/delete/<%= p.id %>/" class="danger">Yes</a></li>
+	</ul>
+<% end %>

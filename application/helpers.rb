@@ -1,6 +1,6 @@
 helpers do
   def entry(title, created, article)
-    "<h3><a href='#' class='toggle'>[+]&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;#{title}<h2>#{created}</h2></a></h3>
+    "<h3 class='upcase'><a href='#' class='toggle' style='text-transform: uppercase;'>[+]&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;#{title}<h2 class='upcase' style='text-transform: uppercase;'>#{created}</h2></a></h3>
 
 		  <div class='hide'>
 		    <p>#{article}</p>

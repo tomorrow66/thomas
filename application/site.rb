@@ -2,7 +2,7 @@ get '/?' do
   @videos = Video.all
   @posts = Post.all
   @bio = Bio.get(1)
-  erb :index
+  erb :home
 end
 
 get '/test/?' do

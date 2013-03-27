@@ -1,5 +1,2 @@
-require 'vesper'
-Vesper.load_app
-
-# Run the app on Rack
+require './app'
 run Sinatra::Application

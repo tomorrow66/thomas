@@ -1,3 +1,2 @@
-require 'vesper'
-Vesper.load_app
-Vesper.load_tasks
+require './app'
+require 'sinatra/chassis/tasks'

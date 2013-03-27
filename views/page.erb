@@ -1,0 +1,16 @@
+<h3><%= @page.name %></h3>
+<a href="/admin/page/<%= @page.id %>/edit/">EDIT PAGE</a> &nbsp;
+<a href="#" id="delete-page-link" class="danger">DELETE PAGE</a>
+<br />
+<div id="confirm">
+	<% unless @page.id == 1  %>
+	<p>Are you sure?
+	<br />
+			<a href="/admin/page/<%= @page.id %>/delete/" class="danger" >Yes</a> 
+			<a href="" id="delete-page-link" >No</a>
+		<% else %>
+			<span>You can not delete the index page.</span>
+		<% end %>
+	</p>
+</div>
+

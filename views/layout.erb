@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>	
+  	<meta name="google-site-verification" content="NBEqj-Kim0Tenuz2ZtuY1JcINDQmjS91u7SBcPvKOkg" />
+    <script src="js/site/browser_selector.js" type="text/javascript" charset="utf-8" ></script>
+    <link rel="Stylesheet" type="text/css" href="/css/site/style.css">
+    <link rel="Stylesheet" type="text/css" href="/js/site/hover/jquery.hoverscroll.css">
+    <link rel="Stylesheet" type="text/css" href="/js/site/prettyPhoto/css/prettyPhoto.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/site/jqueryUI/js/jquery-ui-1.8.15.custom.min.js"></script>
+    <script type="text/javascript" src="/js/site/hover/jquery.hoverscroll.js"></script>
+	<script type="text/javascript" src="/js/site/site.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="/css/site/jMyCarousel.css" /> 
+	 
+	<script type="text/javascript" src="/js/site/jMyCarousel.js"></script>  
+
+    <script type="text/javascript">
+    
+	  	$(function() {
+		    $(".jMyCarousel").jMyCarousel({
+		        visible: '100%'
+		    });
+		});
+    </script>
+    
+    <script type="text/javascript" src="/js/site/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function() {
+	      $("a[rel^='prettyPhoto']").prettyPhoto();
+      });
+    
+    </script>
+    
+    <script type="text/javascript">
+    	$(document).ready(function() {
+			$("#news #accordion div.hide:first").slideDown();
+		 });
+		 
+    </script>
+
+	<link href="css/site/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/site/jquery.jplayer.min.js"></script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+
+		var playItem = 0;
+
+		var myPlayList = [	
+			{name:"Let Me Breathe",mp3:"http://k003.kiwi6.com/hotlink/ew60q43ac8/6_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/twm440bhxp/track6.ogg"},
+			{name:"Almost There",mp3:"http://k003.kiwi6.com/hotlink/nimxnehxlj/11_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/k2rj4349qd/track11.ogg"},
+			{name:"Strip Me Down",mp3:"http://k003.kiwi6.com/hotlink/9b200ipupw/1_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/n85197j1y8/track1.ogg"},
+			{name:"Brighter",mp3:"http://k003.kiwi6.com/hotlink/h29v0911fu/5_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/1tpe391z14/track5.ogg"},
+			{name:"Real Love",mp3:"http://k003.kiwi6.com/hotlink/cuyn93e0sj/9_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/nlsqwlq2ef/track9.ogg"},
+			{name:"Way of the World",mp3:"http://k003.kiwi6.com/hotlink/j204kzesn0/3_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/j204kzesn0/3_audio_track.mp3"},
+			{name:"Human",mp3:"http://k003.kiwi6.com/hotlink/2gb21nm2l9/4_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/vf2pawwh3s/track4.ogg"},
+			{name:"One Life",mp3:"http://k003.kiwi6.com/hotlink/sdy35d54bq/10_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/az5pyht126/track10.ogg"},
+			{name:"I Wanna Love",mp3:"http://k003.kiwi6.com/hotlink/8v6ujd0tk0/8_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/f46faevo69/track8.ogg"},
+			{name:"Nature Boy",mp3:"http://k003.kiwi6.com/hotlink/u05fl07p1r/7_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/5tlcdsuoyc/track7.ogg"},
+			{name:"Be Myself",mp3:"http://k003.kiwi6.com/hotlink/54h466m28g/2_audio_track.mp3",ogg:"http://k003.kiwi6.com/hotlink/vsdb42w328/track2.ogg"}		
+		];
+
+		// Local copy of jQuery selectors, for performance.
+		var jpPlayTime = $("#jplayer_play_time");
+		var jpTotalTime = $("#jplayer_total_time");
+
+		$("#jquery_jplayer").jPlayer({
+			ready: function() {
+				displayPlayList();
+				playListInit(false); // Parameter is a boolean for autoplay.
+			},
+			oggSupport: true
+		})
+		.jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
+			jpPlayTime.text($.jPlayer.convertTime(playedTime));
+			jpTotalTime.text($.jPlayer.convertTime(totalTime));
+		})
+		.jPlayer("onSoundComplete", function() {
+			playListNext();
+		});
+
+		$("#jplayer_previous").click( function() {
+			playListPrev();
+			$(this).blur();
+			return false;
+		});
+
+		$("#jplayer_next").click( function() {
+			playListNext();
+			$(this).blur();
+			return false;
+		});
+
+		function displayPlayList() {
+			$("#jplayer_playlist ul").empty();
+			for (i=0; i < myPlayList.length; i++) {
+				var listItem = (i == myPlayList.length-1) ? "<li class='jplayer_playlist_item_last'>" : "<li>";
+				listItem += "<a href='#' class='jplayer_playlist_item' id='jplayer_playlist_item_"+i+"' tabindex='1' title='"+ myPlayList[i].name +"'>"+ myPlayList[i].name +"</a></li>";
+				$("#jplayer_playlist ul").append(listItem);
+				$("#jplayer_playlist_item_"+i).data( "index", i ).click( function() {
+					var index = $(this).data("index");
+					if (playItem != index) {
+						playListChange( index );
+					} else {
+						$("#jquery_jplayer").jPlayer("play");
+					}
+					$(this).blur();
+					return false;
+				});
+			}
+		}
+
+		function playListInit(autoplay) {
+			if(autoplay) {
+				playListChange( playItem );
+			} else {
+				playListConfig( playItem );
+			}
+		}
+
+		function playListConfig( index ) {
+			$("#jplayer_playlist_item_"+playItem).removeClass("jplayer_playlist_current").parent().removeClass("jplayer_playlist_current");
+			$("#jplayer_playlist_item_"+index).addClass("jplayer_playlist_current").parent().addClass("jplayer_playlist_current");
+			playItem = index;
+			$("#jquery_jplayer").jPlayer("setFile", myPlayList[playItem].mp3, myPlayList[playItem].ogg);
+		}
+
+		function playListChange( index ) {
+			playListConfig( index );
+			$("#jquery_jplayer").jPlayer("play");
+		}
+
+		function playListNext() {
+			var index = (playItem+1 < myPlayList.length) ? playItem+1 : 0;
+			playListChange( index );
+		}
+
+		function playListPrev() {
+			var index = (playItem-1 >= 0) ? playItem-1 : myPlayList.length-1;
+			playListChange( index );
+		}
+	});
+	-->
+	</script>
+    <title>Thomas Barnette</title>
+</head>
+
+<body>
+	
+	<!-- Show alert messages -->
+	<%= alert %>
+	
+	<!-- Show content -->
+	<%= yield %>
+	
+</body>
+
+</html>

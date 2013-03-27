@@ -30,9 +30,11 @@ jQuery(function()
 					return false;
 				});
 				
+				$('a.slide').live('click', function()
+				{
+					$(this).parent().next().slideToggle(900);		
+					return false;
+				});
 				
-
-				
-				
-				 	
+						 	
 });

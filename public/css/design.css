@@ -220,6 +220,8 @@ div#alert {
 	padding-bottom: 11px;
 }
 
-	
+.upcase {
+	text-transform: uppercase;
+}	
 	
 	
